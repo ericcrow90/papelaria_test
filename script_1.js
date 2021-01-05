@@ -7,7 +7,7 @@ $('#formulario').submit(function(){
 
     $.ajax({
 
-            url:'index_papelaria.php',
+            url:'papelaria_index.php',
             method:'POST',
             data: dados,
             datatype: "html"
