@@ -1,25 +1,20 @@
-$('#formulario').submit(function(){
-
-    var cod = $('#ccodigserv').val();
-    var nome = $('#nomeserv').val();
-    var qtd = $('#quantserv').val();
-    var valorunit = $('#valorserv').val();
-
-    $.ajax({
-
-            url:'papelaria_index.php',
-            method:'POST',
-            data: dados,
-            datatype: "html"
-    }).done(function(result){
-
-    console.log(result);
-    });
+$('#formulario').ready(function(){
+  $('#fechar_abrir_form').click(function(){
+    $('#formulario1').toggle();
+  });
 });
 
-$(document).ready(function(){
-    $("#formulario").click(function(){
-      $("#fechar").hide();
-    });
-  
-  });
+
+//Função de mudar o nome do botão FECHAR E ABRIR FORMULÁRIO
+function mudarNome()
+{
+ if(document.getElementById("fechar_abrir_form").value == "Fechar Formulário")
+
+ {
+  document.getElementById("fechar_abrir_form").value = "Abrir Formulário";
+ } 
+ else
+ {
+  document.getElementById("fechar_abrir_form").value = "Fechar Formulário";
+ }
+}
