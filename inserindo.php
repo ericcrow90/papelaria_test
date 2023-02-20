@@ -19,10 +19,8 @@ $cdg= $_POST['codigprod'];
     $inserindo->execute();
     echo 'Produto cadastrado com sucesso';
 
-    var_dump($inserindo);
+    //var_dump($inserindo);
   }
 }
 
 //=======================DADOS DO FORMULÁRIO==========================================================//
-
-?>
